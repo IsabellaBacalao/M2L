@@ -15,16 +15,7 @@ if (isset($_POST["bouton"])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name "viewport" content="width=50%, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
-    <title>Connexion</title>
-</head>
+<?php include 'header.php'; ?>
 
 <body>
     <center>
@@ -43,12 +34,6 @@ if (isset($_POST["bouton"])) {
 </body>
 
 </html>
-
-
-
-
-
-
 
 
 <div class="container__child ">
@@ -102,3 +87,5 @@ if (isset($_POST["bouton"])) {
         </div>
     </div>
 </div>
+
+<?php include 'footer.php'; ?>

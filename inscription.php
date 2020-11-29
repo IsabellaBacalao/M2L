@@ -30,20 +30,11 @@ if (isset($_POST["inscription"])) {
         header("location:index.php");
     }
 }
-
-
-
-
-
 ?>
 <?php include 'header.php'; ?>
-<!-- Content -->
 
 <div class="container__child ">
-
-
     <div class="container__child ">
-
         <div style="margin-top: 2%;">
             <h3 style="text-align: center; color: black;">INSCRIPTION</h3><br>
 
@@ -52,22 +43,18 @@ if (isset($_POST["inscription"])) {
                     <div class="form-group col-md-6">
                         <label>Nom</label>
                         <input type="text" class="form-control " placeholder="Nom" name="nom" required>
-
                     </div>
                     <div class="form-group col-md-6">
                         <label>Prenom</label>
                         <input type="text" class="form-control " placeholder="Prénom" name="prenom" required>
                     </div>
-
                 </div>
-
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label>Date de naissance</label>
                         <input type="date" class="form-control " placeholder="identifiant@nomdedomaine.fr" name="date_naissance" required>
                     </div>
                 </div>
-
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Telephone</label>
@@ -77,36 +64,21 @@ if (isset($_POST["inscription"])) {
                         <label>Mail</label>
                         <input type="email" name="mail" class="form-control" placeholder="Mail" required>
                     </div>
-
                     <div class="form-group col-md-6">
                         <label>Mots de passe</label>
                         <input type="password" name="mdp" class="form-control" placeholder="Saisir le mot de passe" required>
                     </div>
-
-                    <div class="form-group col-md-6">
-                        <label>Confirmez le mots de passe</label>
-                        <input type="password" name="cfrm_mdp" class="form-control" placeholder="Confirmer le mot de passe" required>
-                    </div>
-
                 </div>
-
                 <input type="submit" class="btn btn-dark btn-block" name="inscription" value="inscription">
-
                 <br>
                 <br>
                 <br>
                 <br>
-
-            </form>
-
-
-        </div>
-    </div>
-</div>
-
-
-</div>
+          </form>
+      </div>
+  </div>
 </div>
 </section>
 
 <?php include 'footer'; ?>
+
