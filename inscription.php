@@ -1,69 +1,84 @@
+<?php
+session_start();
+
+$id = mysqli_connect("127.0.0.1:8889", "root", "root", "M2L");
+$id_utilisateur = "";
+$nom = "";
+$prenom = "";
+$date_naissance = "";
+$telephone = "";
+$mail = "";
+$mdp = "";
+$cfrm_mdp = "";
+
+//Nouveau enregistrement
+
+if (isset($_POST["inscription"])) {
+    $id_utilisateur = $_POST["id_utilisateur"];
+    $nom = $_POST["nom"];
+    $prenom = $_POST["prenom"];
+    $date_naissance = $_POST["date_naissance"];
+    $telephone = $_POST["telephone"];
+    $mail = $_POST["mail"];
+    $mdp = $_POST["mdp"];
+    $cfrm_mdp = $_POST["cfrm_mdp"];
+
+
+    if ($id_utilisateur == "") {
+        $req = "INSERT INTO inscription VALUES (NULL, '$nom', '$prenom', '$date_naissance', '$telephone', '$mail', '$mdp', '$cfrm_mdp')";
+        $res = mysqli_query($id, $req);
+        header("location:index.php");
+    }
+}
+?>
 <?php include 'header.php'; ?>
 
-<!-- Main -->
-<section class="wrapper style1">
-    <div class="container">
-        <div id="content">
+<div class="container__child ">
+    <div class="container__child ">
+        <div style="margin-top: 2%;">
+            <h3 style="text-align: center; color: black;">INSCRIPTION</h3><br>
 
-            <!-- Content -->
-
-            <div class="container__child ">
-
-
-                <div class="container__child ">
-
-                    <div style="margin-top: 2%;">
-                        <h3 style="text-align: center; color: black;">INSCRIPTION</h3><br>
-
-                        <form method="POST">
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputEmail4" style="font-size:14px; color: black;">Nom <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control " autocomplete="off" onchange="maj()" id="inputEmail4" placeholder="Nom" required="require_once" title="Veuillez renseigner votre Nom" name="nom">
-
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="inputPassword4" style="font-size:14px; color: black;">Prénom <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control " autocomplete="off" id="inputPassword4" placeholder="Prénom" required="require_once" title="Veuillez renseigner votre Prénom" name="prenom">
-                                </div>
-
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="inputAddress" style="font-size:14px; color: black;">Email <span style="color: red;">*</span></label>
-                                    <input type="email" class="form-control " autocomplete="off" placeholder="identifiant@nomdedomaine.fr" required="require_once" name="email">
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label style="font-size:14px; color: black;">Mot de passe <span style="color: red;">*</span></label>
-                                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir 8 characteres minimum, dont une lettre majuscule et miniscule, un chiffre" name="mdp" class="form-control" placeholder="Mot de passe" require="">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label style="font-size:14px; color: black;">Confirmer le mot de passe <span style="color: red;">*</span></label>
-                                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir 8 characteres minimum, dont une lettre majuscule et miniscule, un chiffre" name="cfr_mdp" class="form-control" placeholder="Confirmer le mot de passe" require="">
-                                </div>
-
-                            </div>
-
-                            <br>
-                            <input type="submit" class="btn btn-dark btn-block" style="float: right;" name="valid" value="S'inscrire" title="Cliquer pour s'inscrire">
-                            <br>
-                            <br>
-                            <br>
-
-                        </form>
-
-
+            <form method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Nom</label>
+                        <input type="text" class="form-control " placeholder="Nom" name="nom" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Prenom</label>
+                        <input type="text" class="form-control " placeholder="Prénom" name="prenom" required>
                     </div>
                 </div>
-            </div>
-
-
-        </div>
-    </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label>Date de naissance</label>
+                        <input type="date" class="form-control " placeholder="identifiant@nomdedomaine.fr" name="date_naissance" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Telephone</label>
+                        <input type="text" name="telephone" class="form-control" placeholder="Telephone" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Mail</label>
+                        <input type="email" name="mail" class="form-control" placeholder="Mail" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Mots de passe</label>
+                        <input type="password" name="mdp" class="form-control" placeholder="Saisir le mot de passe" required>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-dark btn-block" name="inscription" value="inscription">
+                <br>
+                <br>
+                <br>
+                <br>
+          </form>
+      </div>
+  </div>
+</div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer'; ?>
+
