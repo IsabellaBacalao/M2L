@@ -39,9 +39,9 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="ligues.html">Ligues</a></li>
+								<li><a href="ligues.php">Ligues</a></li>
 								<li><a href="emploi.php">Emploi</a></li>
-								<li><a href="contacts.html">Contacts</a></li>
+								<li><a href="contacts.php">Contacts</a></li>
 								<li><a href="connexion.php">Connexion</a></li>
 							</ul>
 						</nav>
