@@ -68,6 +68,11 @@ if (isset($_POST["inscription"])) {
                         <label>Mots de passe</label>
                         <input type="password" name="mdp" class="form-control" placeholder="Saisir le mot de passe" required>
                     </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Confirmez le mots de passe</label>
+                        <input type="password" name="cfrm_mdp" class="form-control" placeholder="Comfirmez le mot de passe" required>
+                    </div>
                 </div>
                 <input type="submit" class="btn btn-dark btn-block" name="inscription" value="inscription">
                 <br>
