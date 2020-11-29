@@ -16,15 +16,13 @@
                             <p>Fax : 03.83.18.87.03</p>
                             <p>Email : contact@m2l.fr</p>
                         </div>
-                        <hr>
+                        <br>
                         <div>
-                            <span style="text-decoration: underline;">DIRECTEUR Lucien
-                                SAPIN</span>
+                        <h4 style="text-decoration: underline;">DIRECTEUR Lucien SAPIN</h4> 
                             <p>Tél. : 03 83 18 87 02</p>
                             <p>Fax : 03 83 18 87 03</p>
                             <p>Email : lucien.gastaldello@m2l.fr</p>
                         </div>
-                        <hr>
                     </div>
 
 
@@ -39,8 +37,7 @@
                         <p>Tél. : 03 83 18 87 05</p>
                         <p>Email : martine.genoux@m2l.fr</p>
 
-                        <hr>
-
+                        <br>
                         <h4 style="text-decoration: underline;">SECRÉTAIRE COMPTABLE</h4>
 
                         <p>Martine DUPONT</p>
