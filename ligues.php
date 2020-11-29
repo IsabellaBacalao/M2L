@@ -1,205 +1,149 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>LIGUES</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+<?php include 'header.php'; ?>
+<!-- Main -->
+<section class="wrapper style1">
+	<div class="container">
+		<div class="row gtr-200">
+			<div id="content">
+				<!-- Content -->
+				<h2>Ligues sports</h2>
+				<p>Sidebar on the left, content on the right.</p>
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
 
-			<!-- Header -->
-				<div id="header">
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Dropdown</a>
-									<ul>
-										<li><a href="#">Lorem dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam sed tempus</a></li>
-										<li>
-											<a href="#">Submenu</a>
-											<ul>
-												<li><a href="#">Lorem dolor</a></li>
-												<li><a href="#">Phasellus magna</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul>
-								</li>
-								<li><a href="ligues.html">Ligues</a></li>
-								<li><a href="emploi.php">Emploi</a></li>
-								<li><a href="contacts.html">Contacts</a></li>
-								<li><a href="connexion.php">Connexion</a></li>
-							</ul>
-						</nav>
-
-				</div>
-
-			<!-- Main -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-4 col-12-narrower">
-								<div id="sidebar">
-
-									<!-- Sidebar -->
-
-										<section>
-											<h3>Just a Subheading</h3>
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-											Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-											Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
-											<footer>
-												<a href="#" class="button">Continue Reading</a>
-											</footer>
-										</section>
-
-										<section>
-											<h3>Another Subheading</h3>
-											<ul class="links">
-												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-												<li><a href="#">Ornare in hendrerit in lectus</a></li>
-												<li><a href="#">Semper mod quis eget mi dolore</a></li>
-												<li><a href="#">Consequat etiam lorem phasellus</a></li>
-												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-												<li><a href="#">Semper mod quisturpis nisi</a></li>
-											</ul>
-											<footer>
-												<a href="#" class="button">More Random Links</a>
-											</footer>
-										</section>
-
-								</div>
-							</div>
-							<div class="col-8  col-12-narrower imp-narrower">
-								<div id="content">
-
-									<!-- Content -->
-
-										<article>
-											<header>
-												<h2>Left Sidebar</h2>
-												<p>Sidebar on the left, content on the right.</p>
-											</header>
-
-											<span class="image featured"><img src="images/banner.jpg" alt="" /></span>
-
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-											Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-											Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-											consequat etiam lorem ipsum dolor sit amet nullam.</p>
-
-											<h3>And Yet Another Subheading</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-											justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-											ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-											vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-											Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-											rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-											Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-											Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
-
-											<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-											quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-											Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-											fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-											Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-											Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
-										</article>
-
-								</div>
+						<div class="thumbnail">
+							<img src="images/crossfit-5730105_1280.jpg" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>Crossfit</h3>
+								<p>Le crossfit est un programme combinant plusieurs activités physiques et
+									sportives.
+									l inclut notamment la musculation, la gymnastique et l’haltérophilie.
+									Ce sport se base, entre autres, sur divers exercices dont les gestes se
+									rapprochent
+									de ceux que vous réalisez dans la vie de tous les jours : s’asseoir, se
+									lever,
+									s’accroupir.</p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
 							</div>
 						</div>
 					</div>
-				</section>
 
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
-								</ul>
-							</section>
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>More Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
-								</ul>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<h3>Get In Touch</h3>
-								<form>
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/la-box.jpg" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>La boxe</h3>
+								<p>La boxe est un sport de combat qui se pratique à un contre un et dans lequel
+									les adversaires s’affrontent à coups de poing. Ce sport offre une multitude
+									de
+									bienfaits, tant sur le plan mental que physique. Il existe de nombreuses
+									disciplines
+									de boxe : kick-boxing, full contact, boxe thaie, boxe française et boxe
+									anglaise.</p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
+							</div>
 						</div>
 					</div>
 
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-						</ul>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/football-ame.jpg" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>Rugby</h3>
+								<p>Le rugby est un sport d'équipe qui apporte énormément à la fois sur le plan
+									social et humain. C'est un sport qui demande beaucoup d'engagement physique.
+									Les joueurs doivent y être préparés mentalement et physiquement pour
+									apprendre
+									à y jouer sainement.</p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
+							</div>
 						</div>
+					</div>
+
+
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/tennis-player.jpg" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>Tennis</h3>
+								<p>Le tennis est un sport de raquette qui oppose soit deux joueurs
+									soit quatre joueurs qui forment deux équipes de deux.
+									Les joueurs utilisent une raquette cordée verticalement et horizontalement
+									à une tension variant avec la puissance ou l'effet que l'on veut obtenir.
+								</p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/volleyball-vertical.jpg" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>Volleybal</h3>
+								<p>Le volleyball, c’est l’un des sports les plus pratiqués dans le monde. C’est
+									un sport
+									collectif qui met en compétition deux équipes de six joueurs scindés grâce à
+									un filet.
+									Sur un terrain rectangulaire, les joueurs s’affrontent à l’aide d’un ballon.
+									Les dimensions du terrain sont de 9 mètres de large et 18 mètres de long.
+								</p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/football.jpn.webp" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>Football</h3>
+								<p>Le football, parfois appelé soccer, est un sport qui se joue par
+									l’affrontement de
+									deux équipes de onze joueurs (footballeurs) et un arbitre qui veille au
+									respect des règles.
+									C’est un sport qui se joue grâce à un ballon rond sur un terrain
+									rectangulaire dotés de deux buts.</p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/runner.jpg" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>Athlétisme</h3>
+								<p>L’athlétisme est un ensemble d’épreuves sportives codifiées comprenant les
+									courses,
+									sauts, lancers, épreuves combinées et marche. Il s’agit de l’art de dépasser
+									la performance
+									des adversaires en vitesse ou en endurance, en distance ou en hauteur. </p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/skate.jpg" alt="..." style="width:280px;height:380px;">
+							<div class="caption">
+								<h3>Skate </h3>
+								<p>Le skateboard est aussi la pratique de cet objet, généralement considérée
+									comme un sport,
+									une activité récréative, une forme artistique ou un moyen de transport. Les
+									pratiquants
+									sont appelés « skateurs » ou « riders », et le verbe skater signifie «
+									pratiquer le skateboard ».</p>
+								<a href="#" class="btn btn-default" role="button">Button</a></p>
+							</div>
+						</div>
+					</div>
 
 				</div>
-
+			</div>
 		</div>
+	</div>
+</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+<?php include 'footer.php'; ?>
