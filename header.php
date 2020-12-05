@@ -1,14 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-	<title>Arcana by HTML5 UP</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-</head>
-
 <body class="is-preload">
 	<div id="page-wrapper">
 		<!-- Header -->
@@ -21,9 +10,9 @@
 						<ul>
 							<li><a href="statutjuridique.php">Statut juridique</a></li>
 							<li><a href="locaux.php">Locaux</a></li>
-							<li><a href="#">Personnel</a></li>
-							<li><a href="#">Matériel</a></li>
-							<li><a href="#">Services</a></li>
+							<li><a href="personnel.php">Personnel</a></li>
+							<li><a href="materiel.php">Matériel</a></li>
+							<li><a href="services.php">Services</a></li>
 						</ul>
 					</li>
 					<li><a href="ligues.php">Ligues</a></li>
