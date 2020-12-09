@@ -8,6 +8,7 @@ $prenom = "";
 $date_naissance = "";
 $telephone = "";
 $mail = "";
+$login = "";
 $mdp = "";
 $cfrm_mdp = "";
 
@@ -20,12 +21,13 @@ if (isset($_POST["inscription"])) {
     $date_naissance = $_POST["date_naissance"];
     $telephone = $_POST["telephone"];
     $mail = $_POST["mail"];
+    $login = $_POST["login"];
     $mdp = $_POST["mdp"];
     $cfrm_mdp = $_POST["cfrm_mdp"];
 
 
     if ($id_utilisateur == "") {
-        $req = "INSERT INTO inscription VALUES (NULL, '$nom', '$prenom', '$date_naissance', '$telephone', '$mail', '$mdp', '$cfrm_mdp')";
+        $req = "INSERT INTO utilisateurs VALUES (NULL, '$nom', '$prenom', '$date_naissance', '$telephone', '$mail', '$login', '$mdp', '$cfrm_mdp')";
         $res = mysqli_query($id, $req);
         header("location:index.php");
     }
@@ -36,70 +38,58 @@ if (isset($_POST["inscription"])) {
 <html>
 
 <head>
-	<title>Inscription</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Inscription</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body class="is-preload">
-	<div id="page-wrapper">
-    
-   
-<?php include 'header.php'; ?>
+    <div id="page-wrapper">
 
-<div class="container__child ">
-    <div class="container__child ">
-        <div style="margin-top: 2%;">
-            <h3 style="text-align: center; color: black;">INSCRIPTION</h3><br>
 
-            <form method="POST">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
+        <?php include 'header.php'; ?>
+
+        <section class="wrapper style1">
+            <div class="container">
+
+                <body>
+                    <center>
+                        <h1>INSCRIPTION</h1><br>
+                    </center>
+                    <hr>
+                    <form method="POST">
+
                         <label>Nom</label>
-                        <input type="text" class="form-control " placeholder="Nom" name="nom" required>
-                    </div>
-                    <div class="form-group col-md-6">
+                        <input type="text" placeholder="Nom" name="nom" required>
+
                         <label>Prenom</label>
-                        <input type="text" class="form-control " placeholder="Prénom" name="prenom" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
+                        <input type="text" placeholder="Prénom" name="prenom" required><br>
+
                         <label>Date de naissance</label>
-                        <input type="date" class="form-control " placeholder="identifiant@nomdedomaine.fr" name="date_naissance" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
+                        <input type="date" placeholder="identifiant@nomdedomaine.fr" name="date_naissance" required><br>
+
                         <label>Telephone</label>
-                        <input type="text" name="telephone" class="form-control" placeholder="Telephone" required>
-                    </div>
-                    <div class="form-group col-md-6">
+                        <input type="text" name="telephone" placeholder="Telephone" required>
+
                         <label>Mail</label>
-                        <input type="email" name="mail" class="form-control" placeholder="Mail" required>
-                    </div>
-                    <div class="form-group col-md-6">
+                        <input type="email" name="mail" placeholder="Mail" required>
+
+                        <label>Login</label>
+                        <input type="text" name="login" placeoholder="Entrez votre login" required>
+
                         <label>Mots de passe</label>
-                        <input type="password" name="mdp" class="form-control" placeholder="Saisir le mot de passe" required>
-                    </div>
+                        <input type="password" name="mdp" placeholder="Saisir le mot de passe" required>
 
-                    <div class="form-group col-md-6">
                         <label>Confirmez le mots de passe</label>
-                        <input type="password" name="cfrm_mdp" class="form-control" placeholder="Comfirmez le mot de passe" required>
-                    </div>
-                </div>
-                <input type="submit" class="btn btn-dark btn-block" name="inscription" value="inscription">
-                <br>
-                <br>
-                <br>
-                <br>
-          </form>
-      </div>
-  </div>
-</div>
-</section>
+                        <input type="password" name="cfrm_mdp" placeholder="Confirmez le mot de passe" required>
 
-<?php include 'footer'; ?>
+                        <br>
+                        <center><input type="submit" name="inscription" value="inscription"></center>
+                    </form>
+                </body>
+            </div>
+        </section>
 
+        <?php include 'footer.php'; ?>

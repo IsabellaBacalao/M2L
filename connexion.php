@@ -4,11 +4,11 @@ if (isset($_POST["bouton"])) {
     $login = $_POST["login"];
     $mdp = $_POST["mdp"];
     $id = mysqli_connect("127.0.0.1:8889", "root", "root", "M2L");
-    $req = "select * from user where login='$login' and mdp='$mdp'";
+    $req = "select * from utilisateurs where login='$login' and mdp='$mdp'";
     $res = mysqli_query($id, $req);
-    if (mysqli_num_rows($res) != 0) {
+    if (@mysqli_num_rows($res) != 0) {
         $_SESSION["login"] = $login;
-        header("location:index.html");
+        header("location:index.php");
     } else {
         $erreur = "Erreur de login ou de mdp";
     }
