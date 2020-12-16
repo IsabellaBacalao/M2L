@@ -25,67 +25,50 @@
                                 Merci de lire avec attention les différentes modalités d’utilisation du présent site
                                 avant d’y parcourir ses pages. En vous connectant sur ce site, vous acceptez sans
                                 réserves les présentes modalités. Aussi, conformément à l’article n°6 de la Loi
-                                n°2004-575 du 21 Juin 2004 pour la confiance dans l’économie numérique, les responsables
-                                du présent site internet <a href="http://www.m2l-france.com">www.m2l-france.com</a> sont :
+                                n°2004-575 du 21 Juin 2004 pour la confiance dans l’économie numérique,
+                                </br> 
+                                les responsables du présent site internet <a href="http://www.m2l-france.com">www.m2l-france.com</a> sont :
                             </p>
+                            </br>
                             <p style="color: #b51a00;">
                                 <span style="color: rgb(0, 0, 0);"><b>Editeur du Site : </b></span>
                             </p>
                             <p>
-                                JTA
-                                Numéro de SIRET : 159674854<br>
-                                Responsable editorial : JTA<br>
-                                5 Rue St Denis<br>
-                                Téléphone : 0664582596 - Fax : 0953645235<br>
-                                Email : JTA.sitem2l@gmail.com<br>
+                                M2L
+                                Numéro de SIRET : 1234567890<br>
+                                Responsable editorial : M2L<br>
+                                13 rue Jean Moulin - BP 70001 54510 TOMBLAINE <br>
+                                Téléphone : 03.83.18.87.02 - Fax : 03.83.18.87.03<br>
+                                Email : isabellabacalao@gmail.com  -  timo.riou@gmail.com<br>
                                 Site Web : <a href="http://www.m2l-france.com">www.m2l-france.com</a>
                             </p></br>
-                            <p style="color: #b51a00;">
-                                <b><span style="color: rgb(0, 0, 0);">Hébergement :</span> </b>
-                            </p>
-                            <p>
-                                Hébergeur : webhost
-                                61 Lourdou Vironos Street 6023 Larnaca, Cyprus
-                                Site Web : <a href="http://https://fr.000webhost.com">https://fr.000webhost.com</a>
-                            </p></br>
+                            </br>
                             <p style="color: #b51a00;">
                                 <span style="color: rgb(0, 0, 0);"><b>Développement</b><b> : </b></span>
                             </p>
-                            <p>
-                                JAT
-                                Adresse : 5 Rue St Denis
-                                Site Web : <a href="http://www.m2l-france.com">www.m2l-france.com</a>
-                            </p></br>
+                            
                             <p style="color: #b51a00;">
                                 <span style="color: rgb(0, 0, 0);"><b>Conditions d’utilisation : </b></span>
                             </p>
                             <p>
                                 Ce site (<a href="http://www.m2l-france.com">www.m2l-france.com</a>) est proposé en différents
-                                langages web (HTML, HTML5, Javascript, CSS, etc…) pour un meilleur confort
-                                d'utilisation et un graphisme plus agréable, nous vous recommandons de recourir à
-                                des navigateurs modernes comme Internet explorer, Safari, Firefox, Google Chrome,
-                                etc… <br><br>Les mentions légales ont été générées sur le site
+                                langages web (HTML5,CSS, etc…)
+                                <br><br>
+                                Les mentions légales ont été générées sur le site
                                 <a title="générateur de mentions légales pour site internet gratuit" href="http://www.generateur-de-mentions-legales.com">Générateur de mentions
-                                    légales</a>, offert par <a title="imprimerie paris, imprimeur paris" href="http://welye.com">Welye</a>.
+                                    légales</a>.
 
-                                <span style="color: #323333;">JTA<b> </b></span>met en œuvre tous les moyens dont
+                                <span style="color: #323333;">M2L<b> </b></span>met en œuvre tous les moyens dont
                                 elle dispose, pour assurer une information fiable et une mise à jour fiable de ses
                                 sites internet. Toutefois, des erreurs ou omissions peuvent survenir. L'internaute
-                                devra donc s'assurer de l'exactitude des informations auprès de , et signaler toutes
-                                modifications du site qu'il jugerait utile. n'est en aucun cas responsable de
+                                devra donc s'assurer de l'exactitude des informations et signaler toutes
+                                modifications du site qu'il jugerait utile. Il n'est en aucun cas responsable de
                                 l'utilisation faite de ces informations, et de tout préjudice direct ou indirect
                                 pouvant en découler.
-
-                                <b>Cookies</b> : Le site <a href="http://www.m2l-france.com">www.m2l-france.com</a> peut-être amené
-                                à vous demander l’acceptation des cookies pour des besoins de statistiques et
-                                d'affichage. Un cookies est une information déposée sur votre disque dur par le
-                                serveur du site que vous visitez. Il contient plusieurs données qui sont stockées
-                                sur votre ordinateur dans un simple fichier texte auquel un serveur accède pour
-                                lire et enregistrer des informations . Certaines parties de ce site ne peuvent
-                                être fonctionnelles sans l’acceptation de cookies.
-
+                                </br>
+                                
                                 <b>Liens hypertextes :</b> Les sites internet de peuvent offrir des liens vers
-                                d’autres sites internet ou d’autres ressources disponibles sur Internet. JTA ne
+                                d’autres sites internet ou d’autres ressources disponibles sur Internet. M2L ne
                                 dispose d'aucun moyen pour contrôler les sites en connexion avec ses sites internet.
                                 ne répond pas de la disponibilité de tels sites et sources externes, ni ne la
                                 garantit. Elle ne peut être tenue pour responsable de tout dommage, de quelque
@@ -97,12 +80,12 @@
 
                                 Les utilisateurs, les abonnés et les visiteurs des sites internet de ne peuvent
                                 mettre en place un hyperlien en direction de ce site sans l'autorisation expresse
-                                et préalable de JTA.
+                                et préalable de M2L.
 
                                 Dans l'hypothèse où un utilisateur ou visiteur souhaiterait mettre en place un
-                                hyperlien en direction d’un des sites internet de JTA, il lui appartiendra
+                                hyperlien en direction d’un des sites internet de M2L, il lui appartiendra
                                 d'adresser un email accessible sur le site afin de formuler sa demande de mise en
-                                place d'un hyperlien. JTA se réserve le droit d’accepter ou de refuser un hyperlien
+                                place d'un hyperlien. M2L se réserve le droit d’accepter ou de refuser un hyperlien
                                 sans avoir à en justifier sa décision.
                             </p>
                             </br>
@@ -114,11 +97,11 @@
                                 sur notre site <a href="http://www.m2l-france.com">www.m2l-france.com</a>.
                             </p>
                             <p style="color: #323333;">
-                                JTA s’efforce de fournir sur le site www.m2l-france.com des informations aussi précises que
+                                M2L s’efforce de fournir sur le site www.m2l-france.com des informations aussi précises que
                                 possible. les renseignements figurant sur le site <a href="http://www.m2l-france.com">
                                     www.m2l-france.com</a> ne sont pas exhaustifs et les photos non contractuelles.
                                 Ils sont donnés sous réserve de modifications ayant été apportées depuis
-                                leur mise en ligne. Par ailleurs, tous les informations indiquées sur le site
+                                leur mise en ligne. Par ailleurs, toutes les informations indiquées sur le site
                                 www.m2l-france.com<span style="color: #000000;"><b> </b></span>sont données à titre
                                 indicatif, et sont susceptibles de changer ou d’évoluer sans préavis.
                             </p>
@@ -133,7 +116,7 @@
                                 remis à jour à différentes périodes de l’année, mais peut toutefois contenir des
                                 inexactitudes ou des omissions. Si vous constatez une lacune, erreur ou ce qui parait
                                 être un dysfonctionnement, merci de bien vouloir le signaler par email, à l’adresse
-                                JTA.sitem2l@gmail.com, en décrivant le problème de la manière la plus précise possible
+                                isabellabacalao@gmail.com et/ou timo.riou@gmail.com, en décrivant le problème de la manière la plus précise possible
                                 (page posant problème, type d’ordinateur et de navigateur utilisé, …).
 
                                 Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule
@@ -145,7 +128,7 @@
 
                                 Les liens hypertextes mis en place dans le cadre du présent site internet en direction
                                 d'autres ressources présentes sur le réseau Internet ne sauraient engager la
-                                responsabilité de JTA.
+                                responsabilité de M2L.
                             </p>
                             </br>
 
@@ -162,7 +145,7 @@
                             <p>
                                 Toute reproduction, distribution, modification, adaptation, retransmission ou
                                 publication, même partielle, de ces différents éléments est strictement interdite
-                                sans l'accord exprès par écrit de JTA. Cette représentation ou reproduction, par
+                                sans l'accord exprès par écrit de M2L. Cette représentation ou reproduction, par
                                 quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles
                                 L.335-2 et suivants du Code de la propriété intellectuelle. Le non-respect de cette
                                 interdiction constitue une contrefaçon pouvant engager la responsabilité civile et
