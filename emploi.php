@@ -21,11 +21,6 @@
                     <h2>Emplois</h2>
                 </center>
                 <hr><br>
-
-
-                
             </div>
         </section>
-
-
         <?php include 'footer.php'; ?>
