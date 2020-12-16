@@ -37,26 +37,34 @@
 		<div class="row gtr-200">
 			<section class="col-4 col-12-narrower">
 				<div class="box highlight">
-					<i class="icon solid major fa-paper-plane"></i>
-					<h3>This Is Important</h3>
-					<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a
-						rutrum accumsan sed. Suspendisse eu.</p>
+					<i class="icon solid major fa fa-thumbs-up"></i>
+					<h3>L’hydratation</h3>
+					<p>L’hydratation fait partie intégrante d’une bonne pratique sportive, et 
+						les sportifs de haut niveau le savent bien !
+						“Certains puristes vont jusqu’à se peser avant une course, puis après 
+						la course pour savoir combien d’eau ils ont perdu”, souligne Mathieu Joubel,
+						 kinésithérapeute du sport et préparateur physique. </p>
 				</div>
 			</section>
 			<section class="col-4 col-12-narrower">
 				<div class="box highlight">
-					<i class="icon solid major fa-pencil-alt"></i>
-					<h3>Also Important</h3>
-					<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a
-						rutrum accumsan sed. Suspendisse eu.</p>
+					<i class="icon solid major fa fa-child"></i>
+					<h3>Étirementst</h3>
+					<p>On a souvent tendance à penser que les courbatures viennent d’absence d’étirements ou d’un 
+						étirement insuffisant. Une idée reçue selon Mathieu Joubel, kinésithérapeute du sport, 
+						puisque la courbature est “une réaction physiologique normale d’adaptation du muscle” : 
+						“c’est le signe d’une période inflammatoire pendant laquelle le corps reconstitue ce muscle, 
+						après un effort important. Étirer n’aura aucun effet sur la courbature”</p>
 				</div>
 			</section>
 			<section class="col-4 col-12-narrower">
 				<div class="box highlight">
-					<i class="icon solid major fa-wrench"></i>
-					<h3>Probably Important</h3>
-					<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a
-						rutrum accumsan sed. Suspendisse eu.</p>
+					<i class="icon solid major fa fa-bicycle"></i>
+					<h3>Les micro-siestes</h3>
+					<p>La pratique de la micro-sieste peut être intéressante dans la routine du sportif parce qu’elle 
+						agit sur la fatigue nerveuse et le système nerveux central. Pour se décharger de toutes les 
+						émotions vécues avant pendant et après la course, rien de tel qu’un moment de break, comme 
+						une micro-sieste de 15-20 minutes, par exemple en début d’après-midi.</p>
 				</div>
 			</section>
 		</div>
@@ -67,8 +75,8 @@
 <section id="cta" class="wrapper style3">
 	<div class="container">
 		<header>
-			<h2>Are you ready to continue your quest?</h2>
-			<a href="#" class="button">Insert Coin</a>
+			<h2>Rejoint-nous</h2>
+			<a href="inscription.php" class="button">Inscription</a>
 		</header>
 	</div>
 </section>
