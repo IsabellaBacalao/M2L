@@ -14,7 +14,12 @@
 					<li><a href="faq.php">FAQ</a></li>
 				</ul>
 			</section>
-
+			<section class="col-3 col-6-narrower col-12-mobilep">
+				<h3>Information</h3>
+				<ul class="links">
+					<li>Site fictif élaboré pour l'épreuve E4</li>
+				</ul>
+			</section>
 		</div>
 	</div>
 
