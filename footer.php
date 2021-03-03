@@ -2,22 +2,16 @@
 <div id="footer">
 	<div class="container">
 		<div class="row">
-			<section class="col-3 col-6-narrower col-12-mobilep">
-				<h3>Mentions légales</h3>
+			<section class="col-lg-6" style="text-align:right">
+				<h3>Informations</h3>
 				<ul class="links">
 					<li><a href="mentionslegales.php">Mentions légales</a></li>
 				</ul>
 			</section>
-			<section class="col-3 col-6-narrower col-12-mobilep">
+			<section class="col-lg-6" style="text-align:left">
 				<h3>Services</h3>
 				<ul class="links">
 					<li><a href="faq.php">FAQ</a></li>
-				</ul>
-			</section>
-			<section class="col-3 col-6-narrower col-12-mobilep">
-				<h3>Information</h3>
-				<ul class="links">
-					<li>Site fictif élaboré pour l'épreuve E4</li>
 				</ul>
 			</section>
 		</div>
@@ -37,10 +31,19 @@
 		<ul class="menu">
 			<li>&copy;© 2020 Copyright</li>
 			<li>Design: Isabella Bacalao & Timothée Riou</a></li>
+			<li>Site fictif élaboré pour l'épreuve E4</li>
 		</ul>
 	</div>
 
 </div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 

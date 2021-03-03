@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$id = mysqli_connect("127.0.0.1:8889", "root", "root", "M2L");
+$id = mysqli_connect("127.0.0.1:8889", "root", "root", "m2l");
 $id_utilisateur = "";
 $nom = "";
 $prenom = "";
