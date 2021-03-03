@@ -85,7 +85,13 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f7f7f7 url("images/bg01.png");
+		
+		background-image: url('background.svg');
+		position: relative;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {

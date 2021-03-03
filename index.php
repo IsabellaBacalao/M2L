@@ -18,7 +18,7 @@
 <section class="wrapper style2">
 	<div class="container">
 		<header class="major">
-			<h2>BIENVENUE SUR LE SITE DE LA MAISON DES LIGUE DE LORRAINE</h2>
+			<h2>BIENVENUE SUR LE SITE DE LA MAISON DES LIGUES DE LORRAINE</h2>
 			<br>
 			<p>La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et
 				des services aux différentes ligues sportives régionales de Lorraine et à d’autres
