@@ -39,8 +39,11 @@ if (isset($_POST["bouton"])) {
                         <h1>Formulaire de connexion</h1><br>
                         <hr>
                         <form action="" method="post">
-                            <input type="text" name="login" placeoholder="Entrez votre login :"><br><br>
-                            <input type="password" name="mdp" placeoholder="Entrez votre mdp :"><br><br>
+                            <label>Nom d'utilisateur</label>
+                            <input type="text" name="login" placeoholder="Entrez votre login :" required><br><br>
+
+                            <label>Mot de passe</label>
+                            <input type="password" name="mdp" placeoholder="Entrez votre mdp :" required><br><br>
                             <?php if (isset($erreur)) echo "<h3>$erreur</h3>"; ?>
                             <input type="submit" name="bouton" value="Connexion">
                             <br><br>
