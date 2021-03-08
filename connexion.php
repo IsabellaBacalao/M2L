@@ -3,7 +3,7 @@ session_start();
 if (isset($_POST["bouton"])) {
     $login = $_POST["login"];
     $mdp = $_POST["mdp"];
-    $id = mysqli_connect("127.0.0.1:8889", "root", "root", "M2L");
+    $id = mysqli_connect("127.0.0.1:8889", "root", "root", "m2l");
     $req = "select * from utilisateurs where login='$login' and mdp='$mdp'";
     $res = mysqli_query($id, $req);
     if (@mysqli_num_rows($res) != 0) {
