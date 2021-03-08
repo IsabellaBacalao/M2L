@@ -60,28 +60,32 @@ if (isset($_POST["inscription"])) {
                     </center>
                     <hr>
                     <form method="POST">
-                    <!-- TO DO: Finir le formulaire avec les bons types etc et 
+                        <!-- TO DO: Finir le formulaire avec les bons types etc et 
                 créer la table dans la BDD hebergé sur internet -->
                         <label>ID du club</label>
-                        <input type="text" placeholder="Nom" name="nom" required>
+                        <input type="text" placeholder="ID du club" name="id_club" required>
 
                         <label>Nom du club</label>
-                        <input type="text" placeholder="Prénom" name="prenom" required><br>
+                        <input type="text" placeholder="Nom du club" name="nom_club" required><br>
 
                         <label>Ville</label>
-                        <input type="date" placeholder="identifiant@nomdedomaine.fr" name="date_naissance" required><br>
 
-                        <label>departement</label>
-                        <input type="date" placeholder="identifiant@nomdedomaine.fr" name="date_naissance" required><br>
+                        <div class="form-group">
+                            <label for="gender1" class="control-label"></label>
+                            <div class="col-sm-2">
+                                <select class="form-control" id="gender1">
+                                    <option>Metz (57)</option>
+                                    <option>Nancy (54)</option>
+                                    <option>Thionville (57)</option>
+                                    <option>Épinal (88)</option>
+                                    <option>Vandœuvre-lès-Nancy (54)</option>
+                                </select>
 
-                        <label>Telephone</label>
-                        <input type="text" name="telephone" placeholder="Telephone" required>
+                            </div>
+                        </div><br>
 
                         <label>Mail</label>
                         <input type="email" name="mail" placeholder="Mail" required>
-
-                        <label>Login</label>
-                        <input type="text" name="login" placeoholder="Entrez votre login" required>
 
                         <label>Mots de passe</label>
                         <input type="password" name="mdp" placeholder="Saisir le mot de passe" required>
