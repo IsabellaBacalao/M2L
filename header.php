@@ -11,7 +11,7 @@
 							<li><a href="statutjuridique.php">Statut juridique</a></li>
 							<li><a href="locaux.php">Locaux</a></li>
 							<li><a href="personnel.php">Personnel</a></li>
-							<li><a href="materiel.php">Matériel</a></li>
+							<li><a href="infosSalles.php">Infos salles</a></li>
 							<li><a href="services.php">Services</a></li>
 						</ul>
 					</li>

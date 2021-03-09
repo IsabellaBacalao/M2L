@@ -18,7 +18,7 @@
         <section class="wrapper style1">
             <div class="container">
                 <center>
-                    <h2>Matériel</h2>
+                    <h2>Informations des salles</h2>
                 </center>
                 <br>
                 <hr>
