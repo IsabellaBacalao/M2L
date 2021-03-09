@@ -56,7 +56,7 @@ if (isset($_POST["inscription"])) {
 
                 <body>
                     <center>
-                        <h1>INSCRIPTION</h1><br>
+                        <h1>INSCRIPTION CLUB</h1><br>
                     </center>
                     <hr>
                     <form method="POST">
@@ -69,7 +69,6 @@ if (isset($_POST["inscription"])) {
                         <input type="text" placeholder="Nom du club" name="nom_club" required><br>
 
                         <label>Ville</label>
-
                         <div class="form-group">
                             <label for="gender1" class="control-label"></label>
                             <div class="col-sm-2">
