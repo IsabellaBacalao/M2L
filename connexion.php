@@ -30,28 +30,28 @@ if (isset($_POST["bouton"])) {
     <div id="page-wrapper">
 
         <?php include 'header.php'; ?>
+
         <section class="wrapper style1">
             <div class="container">
-
                 <body>
                     <center>
-                        <br>
-                        <h1>Formulaire de connexion</h1><br>
-                        <hr>
-                        <form action="" method="post">
-                            <label>Nom d'utilisateur</label>
-                            <input type="text" name="login" placeoholder="Entrez votre login :" required><br><br>
-
-                            <label>Mot de passe</label>
-                            <input type="password" name="mdp" placeoholder="Entrez votre mdp :" required><br><br>
-                            <?php if (isset($erreur)) echo "<h3>$erreur</h3>"; ?>
-                            <input type="submit" name="bouton" value="Connexion">
-                            <br><br>
-                            <a class="button" href="inscription.php">S'inscrire</a>
-                        </form>
-                            <hr><br> <br>
+                        <h1>CONNEXION</h1><br>
                     </center>
-                    <br>
+                    <hr>
+                    <form method="POST">
+
+                        <label>Nom d'utilisateur</label>
+                        <input type="text" name="login" placeoholder="Entrez votre login :" required><br><br>
+
+                        <label>Mot de passe</label>
+                        <input type="password" name="mdp" placeoholder="Entrez votre mdp :" required><br><br>
+                        
+                        <?php if (isset($erreur)) echo "<h3>$erreur</h3>"; ?>
+                        
+                        <center><input type="submit" name="bouton" value="Connexion">
+                        <br><br>
+                        <a class="button" href="inscriptionClub.php">S'inscrire</a></center>
+                    </form>
                 </body>
             </div>
         </section>

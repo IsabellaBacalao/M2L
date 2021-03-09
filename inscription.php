@@ -48,7 +48,6 @@ if (isset($_POST["inscription"])) {
 <body class="is-preload">
     <div id="page-wrapper">
 
-
         <?php include 'header.php'; ?>
 
         <section class="wrapper style1">
@@ -56,7 +55,7 @@ if (isset($_POST["inscription"])) {
 
                 <body>
                     <center>
-                        <h1>INSCRIPTION</h1><br>
+                        <h1>INSCRIPTION PARTICULIER</h1><br>
                     </center>
                     <hr>
                     <form method="POST">
@@ -68,16 +67,18 @@ if (isset($_POST["inscription"])) {
                         <input type="text" placeholder="Prénom" name="prenom" required><br>
 
                         <label>Date de naissance</label>
-                        <input type="date" placeholder="identifiant@nomdedomaine.fr" name="date_naissance" required><br>
+                        <div class="form-group">
+                            <label for="start"></label>
+                            <div class="col-sm-2">
+                                <input class="form-control" type="date" id="start" name="date_naissance" required>
+                            </div>
+                        </div><br>
 
                         <label>Telephone</label>
                         <input type="text" name="telephone" placeholder="Telephone" required>
 
                         <label>Mail</label>
                         <input type="email" name="mail" placeholder="Mail" required>
-
-                        <label>Login</label>
-                        <input type="text" name="login" placeoholder="Entrez votre login" required>
 
                         <label>Mots de passe</label>
                         <input type="password" name="mdp" placeholder="Saisir le mot de passe" required>
