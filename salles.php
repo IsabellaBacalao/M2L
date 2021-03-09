@@ -19,40 +19,62 @@
             <div class="container">
                 <center>
                     <h2>Réservation de salles</h2>
-                    <br>
-                    <br>
-
-                    <div class="form-group">
-                        <label for="capacité" class="col-sm-2 control-label">Selection de la capacité</label>
-                        <div class="col-sm-2">
-                            <select class="form-control" id="gender1">
-                                <option>4 personnes</option>
-                                <option>8 personnes</option>
-                                <option>12 personnes</option>
-                                <option>25 personnes</option>
-                                <option>+30 personnes</option>
-                            </select>
-
-                        </div>
-                    </div><br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="form-group">
-                        <label for="typeSalles" class="col-sm-2 control-label">Selection du type de salle</label>
-                        <div class="col-sm-2">
-                            <select class="form-control" id="gender1">
-                                <option>réunion</option>
-                                <option>Multimédia</option>
-                                <option>Amphithéâtre</option>
-                            </select>
-
-                        </div>
-                    </div><br>
-
-
                 </center>
-                <hr><br>
+                <br>
+                <br>
+
+                <div class="form-group">
+                    <label for="capacité" class="col-sm-2 control-label">Selection de la capacité</label>
+                    <div class="col-sm-2">
+                        <select class="form-control" id="gender1">
+                            <option>4 personnes</option>
+                            <option>8 personnes</option>
+                            <option>12 personnes</option>
+                            <option>25 personnes</option>
+                            <option>+30 personnes</option>
+                        </select>
+
+                    </div>
+                </div><br>
+                <br>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="typeSalles" class="col-sm-2 control-label">Selection du type de salle</label>
+                    <div class="col-sm-2">
+                        <select class="form-control">
+                            <option>réunion</option>
+                            <option>Multimédia</option>
+                            <option>Amphithéâtre</option>
+                        </select>
+                    </div>
+                </div><br>
+                <br>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="appt-time" class="col-sm-2 control-label">Heure</label>
+                    <div class="col-sm-2">
+                        <input class="form-control" id="appt-time" type="time" name="appt-time">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="start" class="col-sm-2 control-label">Jour</label>
+                    <div class="col-sm-2">
+                        <input class="form-control" type="date" id="start" name="trip-start">
+                    </div>
+                </div><br>
+                <section class="col-lg-6" style="text-align:right">
+                    <a class="button">Valider</a>
+                </section>
             </div>
-        </section>
-        <?php include 'footer.php'; ?>
+
+
+
+            <hr><br>
+    </div>
+    </section>
+    <?php include 'footer.php'; ?>
