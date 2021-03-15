@@ -1,0 +1,93 @@
+**Cahier des charges - Mission 1 - E4**
+ 
+Dans le cadre de sa campagne, pour une plus grande lisibilité des différents services qu’elle propose ou qu’elle souhaite proposer aux différentes ligues, la maison des ligues par la voix de son directeur, M Lucien Sapin, souhaite faire réaliser un site internet complet (Portail).
+Le site devra intégrer dans un premier temps les pages suivantes :
+-	Une page de présentation de la Maison des ligues
+
+-	Une page présentant toutes les différentes structures hébergées (Tennis, football ….)
+
+-	Une page présentant le statut juridique de la maison des ligues.
+
+-	Une page expliquant les informations des salles
+
+-	Une page présentant les coordonnées de personnels de la maison des ligues
+
+-	Une page de description des locaux
+
+-	La page décrivant les différents services proposés aux ligues.
+
+-	Une page de réservations de salles dans la maison des ligues (dynamique BDD)
+
+-	Une page d’inscription et connexion à la maison des ligues (dynamique BDD)
+
+Afin de mener à bien la réalisation de toutes ces pages, vous disposez de tous les documents qui vous ont été remis.
+-	Contexte
+Mr Lucien Sapin insiste pour que certains points lors de la création du site soient respectés :
+
+
+1)	Ressources que vous devez créer et chercher (bien sur libre de droit)
+
+-	Il trouve le logo horrible et vous charge d’en créer un.
+
+-	Il vous demande également de trouver un nom de domaine percutant
+
+-	Il vous demande également de trouver une solution d’hébergement du site, en sachant qu’il compte encore le faire évoluer afin qu’il soit encore plus complet.
+
+
+
+2)	Spécificités techniques
+
+-	Il veut que le site soit dynamique car il voudrait mettre en place un système de réservation de salles. 
+
+-	Sélection de capacité et type de salle. 
+
+-	Réservation avec date et horaire 
+
+Mr Sapin a beaucoup discuté avec les différents intervenants techniques qu’il a eu à côtoyer et il vous demande de respecter un certain nombre d’éléments :
+-	Optimisation de la programmation du site pour le référencement (plan du site, fichier etc..)
+
+-	Respect des normes W3C
+
+- 	Nommer chaque page dans la balise <TITLE> par des titres parlant 
+
+- 	Remplir les balises <META> pour les descriptions et les mots clés de chaque page 
+
+- 	Enregistrer les pages avec des noms parlant pour les URL en ligne 
+
+- 	Pouvoir revenir sur l'accueil en cliquant sur le logo de n'importe quelle page du site 
+
+- 	Mise en page optimale s'adaptant aux autres résolutions 
+
+- 	Site affichable par l’ensemble des navigateurs
+
+
+3)	Technologie employée
+-	Langages : html, PHP ( tout autre langage est autorisé ex : JavaScript, SCSS,  HTML5 etc…)
+-	System BDD Mysql 
+-	Appliquer les styles CSS pour les mises en page et présentations
+
+4)	Navigation
+-	Le plus simple possible
+-	Respect de la règle des 3 clics (information consultable en moins de 3 clics)
+
+5)	Graphisme et ton
+-	Sobre
+-	Reposant
+-	Nb de couleurs dominantes : 3
+-	Ton : repos, détente et liberté
+
+6)	 Contraintes
+-	Respecter le code couleur 
+-	Visuel en home page
+
+7)	Libertés
+-	Mise en page
+-	Choix des photos et visuels
+-	Design, formes utilisées, icônes
+
+8)	Doivent également apparaitre les liens suivants :
+-	Infos légales
+-	Contact
+-	Liens partenaires 
+
+Mr Sapin n’a aucune compétence technique au niveau du développement informatique, et souhaite que vous lui rédigiez une documentation technique ( une sorte de « notice » de l’utilisation du site).
