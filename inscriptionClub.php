@@ -5,10 +5,7 @@ $id = mysqli_connect("127.0.0.1:8889", "root", "root", "m2l");
 $id_club = "";
 $nom_club = "";
 $ville = "";
-$departement = "";
-$telephone = "";
 $mail = "";
-$login = "";
 $mdp = "";
 $cfrm_mdp = "";
 
@@ -18,19 +15,15 @@ if (isset($_POST["inscription"])) {
     $id_club = $_POST["id_club"];
     $nom_club = $_POST["nom_club"];
     $ville = $_POST["ville"];
-    $departement = $_POST["departement"];
-    $telephone = $_POST["telephone"];
     $mail = $_POST["mail"];
-    $login = $_POST["login"];
     $mdp = $_POST["mdp"];
     $cfrm_mdp = $_POST["cfrm_mdp"];
 
 
-    if ($id_club == "") {
-        $req = "INSERT INTO clubs VALUES ('$id_club', '$nom_club', '$ville', '$departement', '$telephone', '$mail', '$login', '$mdp', '$cfrm_mdp')";
-        $res = mysqli_query($id, $req);
-        header("location:index.php");
-    }
+    $req = "INSERT INTO inscription_club VALUES ('$id_club', '$nom_club', '$ville', '$mail', '$mdp', '$cfrm_mdp')";
+    $res = mysqli_query($id, $req);
+    header("location:index.php");
+    
 }
 ?>
 
