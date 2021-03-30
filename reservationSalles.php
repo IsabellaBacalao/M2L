@@ -25,7 +25,7 @@
                         <a class="button" href="connexion.php">Réserver une salle</a>
                     </section>
                     <section class="col-lg-6" style="text-align:left">
-                        <a class="button" href="materiel.php">Informations des salles</a>
+                        <a class="button" href="infosSalles.php">Informations des salles</a>
                     </section>
                 </center>
                 <hr><br>
