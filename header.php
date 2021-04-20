@@ -16,7 +16,6 @@
 						</ul>
 					</li>
 					<li><a href="ligues.php">Ligues</a></li>
-					<li><a href="reservationSalles.php">Réservation de salles</a></li>
 					<li><a href="salles.php">Salles</a></li>
 					<!--<li><a href="emplois.php">Emplois</a></li>-->
 					<li><a href="contacts.php">Contacts</a></li>

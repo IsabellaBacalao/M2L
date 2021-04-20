@@ -50,7 +50,7 @@ if (isset($_POST["bouton"])) {
                         
                         <center><input type="submit" name="bouton" value="Connexion">
                         <br><br>
-                        <a class="button" href="inscriptionClub.php">S'inscrire</a></center>
+                        <a class="button" href="inscription.php">S'inscrire</a></center>
                     </form>
                 </body>
             </div>

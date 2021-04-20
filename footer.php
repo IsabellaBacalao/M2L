@@ -29,8 +29,8 @@
 	<!-- Copyright -->
 	<div class="copyright">
 		<ul class="menu">
-			<li>&copy;© 2020 Copyright</li>
-			<li>Design: Isabella Bacalao & Timothée Riou</a></li>
+			<li>&copy;2021 Copyright</li>
+			<li>Isabella Bacalao & Timothée Riou</a></li>
 			<li>Site fictif élaboré pour l'épreuve E4</li>
 		</ul>
 	</div>
