@@ -26,8 +26,13 @@ if (isset($_POST["valider"])) {
 
 
 
-    $req = "SELECT * FROM salles WHERE `type`='$type' AND `capacite`= '$capacite'";
+    $req = "SELECT nom_salle FROM salles WHERE `type`='$type' AND `capacite`= '$capacite'";
     $res = mysqli_query($id, $req);
+
+    
+
+    $req3 = "UPDATE salles SET disponible = false, heuredebut = '$heuredebut', heurefin = '$heurefin' , jour = '$jour' WHERE nom_salle = '$nom_salle'";
+    
 
     if ($req == true) {
         $req1 = "SELECT disponible FROM salles WHERE `type`='$type' AND `capacite`= '$capacite'";
@@ -38,6 +43,8 @@ if (isset($_POST["valider"])) {
     } else {
         echo "Cette salle n'existe pas.";
     }
+
+
     
 }
 
@@ -68,30 +75,21 @@ if (isset($_POST["valider"])) {
                 </center>
                 <br>
                 <br>
-
-                <div class="form-group">
-                    <label for="capacité" class="col-sm-2 control-label" name="capacite">Selection de la capacité</label>
-                    <div class="col-sm-2">
-                        <select class="form-control" id="gender1">
-                            <option>4 personnes</option>
-                            <option>8 personnes</option>
-                            <option>12 personnes</option>
-                            <option>25 personnes</option>
-                            <option>+30 personnes</option>
-                        </select>
-
-                    </div>
-                </div><br>
-                <br>
-                <br>
                 <br>
                 <div class="form-group">
-                    <label for="typeSalles" class="col-sm-2 control-label" name="type">Selection du type de salle</label>
+                    <label for="salle" class="col-sm-2 control-label" name="salle">Selection de la salle</label>
                     <div class="col-sm-2">
                         <select class="form-control">
-                            <option>réunion</option>
-                            <option>Multimédia</option>
-                            <option>Amphithéâtre</option>
+                            <option name="nom_salle">Salle Majorelle (Réunion - 25 personnes)</option>
+                            <option value="">Amphithéâtre (Amphithéâtre - 30 personnes)</option>
+                            <option value="">Salle Longwy (Réunion - 4 personnes)</option>
+                            <option value="">Salle Daum (Réunion - 4 personnes)</option>
+                            <option value="">Salle Multimédia (Multimedia - 12 personnes)</option>
+                            <option value="">Salle Lamour (Réunion - 25 personnes)</option>
+                            <option value="">Salle Gallé (Multimédia - 8 personnes)</option>
+                            <option value="">Salle Corbin (Multimédia - 8 personnes)</option>
+                            <option value="">Salle Baccarat (Réunion - 8 personnes)</option>
+                            <option value="">Salle Grüber (Multimédia - 12 personnes)</option>
                         </select>
                     </div>
                 </div><br>
@@ -125,6 +123,8 @@ if (isset($_POST["valider"])) {
                 <section class="col-lg-6" style="text-align:right">
                     <a class="button" name="valider">Valider</a>
                 </section>
+
+                <?php if (isset($nom_salle)) echo "<h3>$nom_salle</h3>"; ?>
             </div>
 
 
