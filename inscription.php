@@ -15,7 +15,6 @@ $cfrm_mdp = "";
 //Nouveau enregistrement
 
 if (isset($_POST["inscription"])) {
-    $id_utilisateur = $_POST["id_utilisateur"];
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $date_naissance = $_POST["date_naissance"];
@@ -25,12 +24,17 @@ if (isset($_POST["inscription"])) {
     $mdp = $_POST["mdp"];
     $cfrm_mdp = $_POST["cfrm_mdp"];
 
-
-    if ($id_utilisateur == "") {
+  
+    $req = "select * from utilisateurs where mail='$mail'";
+    $res = mysqli_query($id, $req);
+    if(@mysqli_num_rows($res) != 0){
+        $erreur = "Le mail est déjà existant";
+    }else{
         $req = "INSERT INTO utilisateurs VALUES (NULL, '$nom', '$prenom', '$date_naissance', '$telephone', '$mail', '$login', '$mdp', '$cfrm_mdp')";
         $res = mysqli_query($id, $req);
         header("location:index.php");
     }
+    
 }
 ?>
 
@@ -80,12 +84,16 @@ if (isset($_POST["inscription"])) {
                         <label>Mail</label>
                         <input type="email" name="mail" placeholder="Mail" required>
 
+                        <label>Logil</label>
+                        <input type="text" name="login" placeholder="login" required>
+
                         <label>Mots de passe</label>
                         <input type="password" name="mdp" placeholder="Saisir le mot de passe" required>
 
                         <label>Confirmez le mots de passe</label>
                         <input type="password" name="cfrm_mdp" placeholder="Confirmez le mot de passe" required>
 
+                        <?php if (isset($erreur)) echo "<h3>$erreur</h3>"; ?>
                         <br>
                         <center><input type="submit" name="inscription" value="inscription"></center>
                     </form>
