@@ -72,13 +72,12 @@ if (isset($_POST["valider"])) {
             <div class="container">
                 <center>
                     <h2>Réservation de salles</h2>
-                </center>
-                <br>
+                    </center>
                 <br>
                 <br>
                 <div class="form-group">
                     <label for="salle" class="col-sm-2 control-label" name="salle">Selection de la salle</label>
-                    <div class="col-sm-2">
+                    <div>
                         <select class="form-control">
                             <option name="nom_salle">Salle Majorelle (Réunion - 25 personnes)</option>
                             <option value="">Amphithéâtre (Amphithéâtre - 30 personnes)</option>
@@ -92,37 +91,34 @@ if (isset($_POST["valider"])) {
                             <option value="">Salle Grüber (Multimédia - 12 personnes)</option>
                         </select>
                     </div>
-                </div><br>
-                <br>
+                </div>
                 <br>
                 <br>
                 <div class="form-group">
                     <label for="appt-time" class="col-sm-2 control-label">Heure de début</label>
-                    <div class="col-sm-2">
+                    <div>
                         <input class="form-control" id="appt-time" type="time" name="heuredebut">
                     </div>
                 </div>
                 <br>
                 <br>
-                <br>
                 <div class="form-group">
                     <label for="appt-time" class="col-sm-2 control-label">Heure de fin</label>
-                    <div class="col-sm-2">
+                    <div>
                         <input class="form-control" id="appt-time" type="time" name="heurefin">
                     </div>
                 </div>
                 <br>
                 <br>
-                <br>
                 <div class="form-group">
-                    <label for="start" class="col-sm-2 control-label">Jour</label>
-                    <div class="col-sm-2">
+                    <label for="start" class="col-sm-2 control-label">Date</label>
+                    <div>
                         <input class="form-control" type="date" id="start" name="jour">
                     </div>
                 </div><br>
-                <section class="col-lg-6" style="text-align:right">
-                    <a class="button" name="valider">Valider</a>
-                </section>
+                
+                <center><a class="button" name="valider">Valider</a></center>
+               
 
                 <?php if (isset($nom_salle)) echo "<h3>$nom_salle</h3>"; ?>
             </div>

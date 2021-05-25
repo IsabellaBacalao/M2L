@@ -84,7 +84,7 @@ if (isset($_POST["inscription"])) {
                         <label>Mail</label>
                         <input type="email" name="mail" placeholder="Mail" required>
 
-                        <label>Logil</label>
+                        <label>Login</label>
                         <input type="text" name="login" placeholder="login" required>
 
                         <label>Mots de passe</label>
