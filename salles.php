@@ -21,35 +21,20 @@ if (isset($_POST["valider"])) {
     $heurefin = $_POST["heurefin"];
     $jour = $_POST["jour"];
     $type = $_POST["type"];
-    $capacite = $_POST["capacite"];
-    
+    $capacite = $_POST["capacite"]; 
 
-
-
-    $req = "SELECT nom_salle FROM salles WHERE `type`='$type' AND `capacite`= '$capacite'";
+   //Demander au prof comment faire l'ajout de la date à la BDD (proble de format SQL - HTML)
+    $req = "UPDATE salles SET disponible = false, heuredebut = '$heuredebut', heurefin = '$heurefin' , jour = '$jour' WHERE nom_salle = '$nom_salle'";
     $res = mysqli_query($id, $req);
-
     
-
-    $req3 = "UPDATE salles SET disponible = false, heuredebut = '$heuredebut', heurefin = '$heurefin' , jour = '$jour' WHERE nom_salle = '$nom_salle'";
-    
-
-    if ($req == true) {
-        $req1 = "SELECT disponible FROM salles WHERE `type`='$type' AND `capacite`= '$capacite'";
-        $res1 = mysqli_query($id, $req1);
-        if ($req1 == true){
-            $req1 = "UPDATE 'disponible' = false";
-        }
-    } else {
-        echo "Cette salle n'existe pas.";
+    $req1 = "SELECT * FROM salles WHERE nom_salle='$nom_salle'";
+    $res1 = mysqli_query($id, $req1);
+    if (@mysqli_num_rows($res1) != 0) {
+        $message = "Votre reservation à été enregistré salle reservé :" + $nom_salle + "Date :" + $jour + "Heure : " + $heuredebut;
     }
-
-
-    
 }
 
 ?>
-
 
 <!DOCTYPE HTML>
 <html>
@@ -76,20 +61,20 @@ if (isset($_POST["valider"])) {
                 <br>
                 <br>
                 <div class="form-group">
-                    <label for="salle" class="col-sm-2 control-label" name="salle">Selection de la salle</label>
+                    <label for="salle" class="col-sm-2 control-label" name="nom_salle">Selection de la salle</label>
                     <div>
-                        <select class="form-control">
-                            <option name="nom_salle">Salle Majorelle (Réunion - 25 personnes)</option>
-                            <option value="">Amphithéâtre (Amphithéâtre - 30 personnes)</option>
-                            <option value="">Salle Longwy (Réunion - 4 personnes)</option>
-                            <option value="">Salle Daum (Réunion - 4 personnes)</option>
-                            <option value="">Salle Multimédia (Multimedia - 12 personnes)</option>
-                            <option value="">Salle Lamour (Réunion - 25 personnes)</option>
-                            <option value="">Salle Gallé (Multimédia - 8 personnes)</option>
-                            <option value="">Salle Corbin (Multimédia - 8 personnes)</option>
-                            <option value="">Salle Baccarat (Réunion - 8 personnes)</option>
-                            <option value="">Salle Grüber (Multimédia - 12 personnes)</option>
-                        </select>
+                        <!-- Dropdown qui selectionne les salles disponibles -->
+                        <SELECT class="form-control" name="nom_salle">
+                        <?php
+                        $req = "SELECT * FROM salles where disponible=1";
+                        $res = mysqli_query($id, $req); 
+                        while($ligne = mysqli_fetch_assoc($res)){
+                        ?>
+                        <OPTION value = ""> <?php echo $ligne["nom_salle"]." ( ".$ligne["type"]." - ".$ligne["capacite"]." personnes ) ";?> </OPTION>
+                        <?php
+                        }
+                        ?>
+                        </SELECT>
                     </div>
                 </div>
                 <br>
@@ -97,7 +82,8 @@ if (isset($_POST["valider"])) {
                 <div class="form-group">
                     <label for="appt-time" class="col-sm-2 control-label">Heure de début</label>
                     <div>
-                        <input class="form-control" id="appt-time" type="time" name="heuredebut">
+                        <!-- FORMAT DATE NON COMPATIBLE SQL -->
+                        <input class="form-control" id="appt-time" format="HH:MM:SS" type="time" name="heuredebut">
                     </div>
                 </div>
                 <br>
@@ -113,14 +99,13 @@ if (isset($_POST["valider"])) {
                 <div class="form-group">
                     <label for="start" class="col-sm-2 control-label">Date</label>
                     <div>
-                        <input class="form-control" type="date" id="start" name="jour">
+                        <!-- FORMAT DATE NON COMPATIBLE SQL -->
+                        <input class="form-control" type="date" date-format="YYYY-MM-DD" id="start" name="jour">
                     </div>
                 </div><br>
-                
+                <?php if (isset($message)) echo "<h3>$message</h3>"; ?>
                 <center><a class="button" name="valider">Valider</a></center>
-               
-
-                <?php if (isset($nom_salle)) echo "<h3>$nom_salle</h3>"; ?>
+              
             </div>
 
 
