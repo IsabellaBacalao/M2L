@@ -14,24 +14,27 @@ $capacite = "";
 
 
 if (isset($_POST["valider"])) {
-    $id_salle = $_POST["id_salle"];
-    $nom_salle = $_POST["nom_salle"];
+    print_r($_POST);
+    $id_salle = $_POST["nom_salle"];
+    //$nom_salle = $_POST["nom_salle"];
     $disponible = $_POST["disponible"];
-    $heuredebut = $_POST["heuredebut"];
-    $heurefin = $_POST["heurefin"];
+    $heuredebut = $_POST["heuredebut"].":00";
+    $heurefin = $_POST["heurefin"].":00";
     $jour = $_POST["jour"];
     $type = $_POST["type"];
     $capacite = $_POST["capacite"]; 
 
    //Demander au prof comment faire l'ajout de la date à la BDD (proble de format SQL - HTML)
-    $req = "UPDATE salles SET disponible = false, heuredebut = '$heuredebut', heurefin = '$heurefin' , jour = '$jour' WHERE nom_salle = '$nom_salle'";
+   $req = "insert into reservation values (null,$id_salle,'$heuredebut','$heurefin','$jour')";
+   echo $req;
+    //$req = "UPDATE salles SET disponible = false, heuredebut = '$heuredebut', heurefin = '$heurefin' , jour = '$jour' WHERE nom_salle = '$nom_salle'";
     $res = mysqli_query($id, $req);
     
     $req1 = "SELECT * FROM salles WHERE nom_salle='$nom_salle'";
     $res1 = mysqli_query($id, $req1);
-    if (@mysqli_num_rows($res1) != 0) {
-        $message = "Votre reservation à été enregistré salle reservé :" + $nom_salle + "Date :" + $jour + "Heure : " + $heuredebut;
-    }
+    //if (@mysqli_num_rows($res1) != 0) {
+        $message = "Votre reservation à été enregistré. \r Date : " . $jour . "\r Heure : " . $heuredebut;
+    //}
 }
 
 ?>
@@ -60,17 +63,18 @@ if (isset($_POST["valider"])) {
                     </center>
                 <br>
                 <br>
+                <form action="" method="post">
                 <div class="form-group">
                     <label for="salle" class="col-sm-2 control-label" name="nom_salle">Selection de la salle</label>
                     <div>
                         <!-- Dropdown qui selectionne les salles disponibles -->
                         <SELECT class="form-control" name="nom_salle">
                         <?php
-                        $req = "SELECT * FROM salles where disponible=1";
+                        $req = "SELECT * FROM salles";
                         $res = mysqli_query($id, $req); 
                         while($ligne = mysqli_fetch_assoc($res)){
                         ?>
-                        <OPTION value = ""> <?php echo $ligne["nom_salle"]." ( ".$ligne["type"]." - ".$ligne["capacite"]." personnes ) ";?> </OPTION>
+                        <OPTION value = "<?=$ligne["id_salle"];?>"> <?php echo $ligne["nom_salle"]." ( ".$ligne["type"]." - ".$ligne["capacite"]." personnes ) ";?> </OPTION>
                         <?php
                         }
                         ?>
@@ -103,9 +107,10 @@ if (isset($_POST["valider"])) {
                         <input class="form-control" type="date" date-format="YYYY-MM-DD" id="start" name="jour">
                     </div>
                 </div><br>
-                <?php if (isset($message)) echo "<h3>$message</h3>"; ?>
-                <center><a class="button" name="valider">Valider</a></center>
-              
+                <?php echo nl2br ("<h3>$message</h3>"); ?>
+                
+                <center><input type="submit" class="button" name="valider" value="Valider"></center>
+                </form>
             </div>
 
 
