@@ -4,36 +4,30 @@ session_start();
 $id = mysqli_connect("127.0.0.1:8889", "root", "root", "m2l");
 $id_salle = "";
 $nom_salle = "";
-$disponible = "";
 $heuredebut = "";
 $heurefin = "";
 $jour = "";
-$type = "";
-$capacite = "";
+//$type = "";
+//$capacite = "";
 
 
 
 if (isset($_POST["valider"])) {
-    print_r($_POST);
+    //print_r($_POST);
     $id_salle = $_POST["nom_salle"];
     //$nom_salle = $_POST["nom_salle"];
-    $disponible = $_POST["disponible"];
+    //$disponible = $_POST["disponible"];
     $heuredebut = $_POST["heuredebut"].":00";
     $heurefin = $_POST["heurefin"].":00";
     $jour = $_POST["jour"];
-    $type = $_POST["type"];
-    $capacite = $_POST["capacite"]; 
+    //$type = $_POST["type"];
+    //$capacite = $_POST["capacite"]; 
 
-   //Demander au prof comment faire l'ajout de la date à la BDD (proble de format SQL - HTML)
-   $req = "insert into reservation values (null,$id_salle,'$heuredebut','$heurefin','$jour')";
-   echo $req;
-    //$req = "UPDATE salles SET disponible = false, heuredebut = '$heuredebut', heurefin = '$heurefin' , jour = '$jour' WHERE nom_salle = '$nom_salle'";
-    $res = mysqli_query($id, $req);
-    
-    $req1 = "SELECT * FROM salles WHERE nom_salle='$nom_salle'";
-    $res1 = mysqli_query($id, $req1);
+   //$req = "insert into reservation values (null,$id_salle,'$heuredebut','$heurefin','$jour')";
+   //echo $req;
+    //$res = mysqli_query($id, $req);
     //if (@mysqli_num_rows($res1) != 0) {
-        $message = "Votre reservation à été enregistré. \r Date : " . $jour . "\r Heure : " . $heuredebut;
+    $message = "Votre reservation à été enregistré. \r Date : " . $jour . "\r Heure : " . $heuredebut;
     //}
 }
 
@@ -103,11 +97,10 @@ if (isset($_POST["valider"])) {
                 <div class="form-group">
                     <label for="start" class="col-sm-2 control-label">Date</label>
                     <div>
-                        <!-- FORMAT DATE NON COMPATIBLE SQL -->
                         <input class="form-control" type="date" date-format="YYYY-MM-DD" id="start" name="jour">
                     </div>
                 </div><br>
-                <?php echo nl2br ("<h3>$message</h3>"); ?>
+                <?php echo nl2br (@$message); ?>
                 
                 <center><input type="submit" class="button" name="valider" value="Valider"></center>
                 </form>
