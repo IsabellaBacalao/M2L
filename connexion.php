@@ -6,11 +6,7 @@ if (isset($_POST["bouton"])) {
     $id = mysqli_connect("127.0.0.1:8889", "root", "root", "m2l");
     $req = "select * from utilisateurs where login='$login' and mdp='$mdp'";
     $res = mysqli_query($id, $req);
-    if ($login =='admin' && $mdp =='admin') {
-        $_SESSION["login"] = $login;
-        header("location:admin.php");
-    }
-    else if (@mysqli_num_rows($res) != 0) {
+    if (@mysqli_num_rows($res) != 0) {
         $_SESSION["login"] = $login;
         header("location:index.php");
     } else {
