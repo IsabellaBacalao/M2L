@@ -3,6 +3,7 @@ session_start();
 
 $id = mysqli_connect("127.0.0.1:8889", "root", "root", "m2l");
 $id_salle = "";
+$id_utilisateur ="";
 $nom_salle = "";
 $heuredebut = "";
 $heurefin = "";
@@ -15,6 +16,7 @@ $jour = "";
 if (isset($_POST["valider"])) {
     //print_r($_POST);
     $id_salle = $_POST["nom_salle"];
+    $id_utilisateur = $_POST["id_utilisateur"];
     //$nom_salle = $_POST["nom_salle"];
     //$disponible = $_POST["disponible"];
     $heuredebut = $_POST["heuredebut"].":00";
@@ -23,9 +25,9 @@ if (isset($_POST["valider"])) {
     //$type = $_POST["type"];
     //$capacite = $_POST["capacite"]; 
 
-   //$req = "insert into reservation values (null,$id_salle,'$heuredebut','$heurefin','$jour')";
+    $req = "insert into reservation values (null,$id_salle,0,'$heuredebut','$heurefin','$jour')";
    //echo $req;
-    //$res = mysqli_query($id, $req);
+    $res = mysqli_query($id, $req);
     //if (@mysqli_num_rows($res1) != 0) {
     $message = "Votre reservation à été enregistré. \r Date : " . $jour . "\r Heure : " . $heuredebut;
     //}
