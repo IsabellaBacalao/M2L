@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
+// test revert $ git reset --hard HEAD^
 <body class="is-preload">
 	<div id="page-wrapper">
 
